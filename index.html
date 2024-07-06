@@ -24,17 +24,14 @@
         <button type="submit" style="font-size: 40px; display: flex; align-items: center; justify-content: center;">➢</button>
     </form>
 </div>
-
 <script>
-function alert() {
-    if (confirm("Подтвердить?")) {
-        return true;
-    } else {
-        return false;
-    }
+pass = prompt('Введите пароль');
+if (pass == '72445892') ; alert('Добро пожаловать!') ;
+else {
+  alert('Пароль не верный, попробуйте ещё раз.') ;
+  top.location.href = "";     
 }
 </script>
-    
 <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxeZuvUZ7KnSb6f56nNvoCrMyv9muiUlDVx8EBDvxfL65LyPGO13PO-Y1ck8KdWgUk/exec'
     const form = document.forms['submit-to-google-sheet']
