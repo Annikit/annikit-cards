@@ -26,6 +26,12 @@ body{
     margin-bottom: 30px;
     font-size: 35px;
 }
+.login-form h5{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 35px;
+}
 .login-form input{
     width: 100%;
     padding: 15px;
