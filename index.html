@@ -17,9 +17,9 @@
 
         <input type="text" name="Name" id="Name" autocomplete="off" placeholder="Введите Ваше имя" required>
         
-        <input type="text" name="Card number" id="Card number" autocomplete="off" placeholder="Введите Ваш номер карты" required>
+        <input type="text" name="Card number" id="Card number" autocomplete="off" placeholder="Введите Ваш номер карты" required minlength="12" maxlength="12">
 
-        <input type="text" name="Amount" id="Amount" autocomplete="off" placeholder="Введите сумму пополнения" required>
+        <input type="number" name="Amount" id="Amount" autocomplete="off" placeholder="Введите сумму пополнения пример: 10.00" required minlength="4" maxlength="5">
         
         <button type="submit" style="font-size: 40px; display: flex; align-items: center; justify-content: center;">➢</button>
     </form>
