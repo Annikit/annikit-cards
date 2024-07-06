@@ -30,6 +30,7 @@ body{
     text-align: center;
     color: #fff;
     margin-top: 10px;
+    margin-bottom: 0px;
     font-size: 15px;
 }
 .login-form input{
