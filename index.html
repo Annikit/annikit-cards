@@ -25,6 +25,16 @@
     </form>
 </div>
 
+    <script>
+// es6
+const result = confirm('Вам нравится JavaScript?');
+if (result) {
+document.querySelector('#result').textContent = 'Вы ответили, что Вам нравится JavaScript';
+} else {
+document.querySelector('#result').textContent = 'Вы ответили, что Вам не нравится JavaScript';
+}
+</script>
+
 <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbxeZuvUZ7KnSb6f56nNvoCrMyv9muiUlDVx8EBDvxfL65LyPGO13PO-Y1ck8KdWgUk/exec'
     const form = document.forms['submit-to-google-sheet']
